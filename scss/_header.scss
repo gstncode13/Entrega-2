@@ -1,0 +1,45 @@
+/* estilos del encabezado */
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../img/fondo.jpg");
+    background-position: center;
+    background-size: cover;
+    img{
+        width: 300px;
+        &:hover{
+        transform: scale(1.5);
+    }
+    }
+    nav{
+        div{
+            ul{
+                li{
+                    list-style: none;
+                    display: inline-block;
+                    background-image: linear-gradient(to top, #a35858, rgb(132, 139, 217));
+                    text-shadow: $rojo;
+                    font-size: large;
+                    border-radius: 5px;
+                    color: white;
+                    margin: 0;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    
+    h1{
+        font-family: 'Merriweather', serif;
+        background-image: linear-gradient(to top, $azul, black);
+        padding: 10px;
+        color: white;
+        border-radius: 5px;
+        text-shadow: $rojo 2px 2px;
+    }
+
+}

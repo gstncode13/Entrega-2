@@ -1,0 +1,118 @@
+/*estilos del main*/
+
+main{
+    text-align: center;
+    background-image: linear-gradient(to top, #2A4A9C, black);
+    color: white;
+
+.main-ps{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:auto;
+    justify-items: center;
+    background-color: black;
+    color: white;
+}
+h2{
+    justify-items: center;
+    padding: 30px;
+    background-image: linear-gradient(to bottom, $azul, black);
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+.suge-p{
+    padding: 50px;
+    font-size: 1rem;
+    text-align: start;
+    align-self: start;
+}
+.suge-p2{
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: $rojo 5px 5px;
+}
+.historia{
+    margin: 20px;
+    width: 900px;
+    border-radius: 50px;
+}
+.sobre-nosotros p{
+    padding: 30px;
+    text-align: left;
+}.img-explora{
+    width: 300px;
+    margin: 20px;
+    border-radius: 7px;
+    box-shadow: -6px 6px #F60202;
+}
+.principal-prod{
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    grid-template-rows: 400px 400px 400px;
+    justify-items: center;
+}
+div{
+    p{
+    padding: 60px;
+    }
+}
+main h1, main p{
+    text-align: center;
+}
+div{
+    img{
+        width: 300px;
+        margin: 10px;
+        border-radius: 7px;
+        box-shadow: -6px 6px $rojo;
+    }
+}
+.img-sugerencias{
+    margin: 20px;
+    width: 900px;
+    border-radius: 50px;
+}
+.sobre-p{
+    padding: 25px;
+    text-align: start;
+}
+}
+
+/*grid index*/
+
+.container{
+    display: grid;
+    grid-template-areas: 
+        "main main"
+        "section section"
+        "footer footer";
+}
+
+.indx-principal{
+    grid-area: main;
+}
+
+.indx-seccion{
+    grid-area: section;
+}
+
+.indx-pie{
+    grid-area: footer;
+}
+
+/* grid productos */
+    
+.container-prod{
+    grid-template-areas: 
+        "main"
+        "footer";
+}
+
+.prod-principal{
+    grid-area: main;
+}
+
+.prod-pie{
+    grid-area: footer;
+}

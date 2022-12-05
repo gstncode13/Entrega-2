@@ -1,0 +1,25 @@
+/* estilos del footer */
+    
+footer{
+    text-align: center;
+    padding: 30px;
+    background-image: linear-gradient(to bottom, #2A4A9C, black);
+    color: white;
+    ul{
+        li{
+            margin: 10px;
+            padding: 20px;
+            list-style: none;
+            display: inline-block;
+            img{
+                width: 45px;
+                display: block;
+            }
+        }
+    }
+
+    h3{
+        color: red
+    }
+}
+

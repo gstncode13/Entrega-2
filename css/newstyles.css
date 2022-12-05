@@ -1,0 +1,176 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif; }
+
+/*colores principales*/
+/*mq*/
+@media screen and (max-width: 600px) {
+  h1 {
+    display: none; }
+  header {
+    display: flex;
+    justify-content: space-around; }
+  .main-ps {
+    display: none; }
+  .img-sugerencias {
+    display: none; }
+  .suge-p {
+    display: none; }
+  .suge-p2 {
+    font-size: 1rem; }
+  .principal-prod {
+    display: flex;
+    flex-wrap: wrap; }
+  .historia {
+    display: none; } }
+
+/* estilos del encabezado */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("../img/fondo.jpg");
+  background-position: center;
+  background-size: cover; }
+  header img {
+    width: 300px; }
+    header img:hover {
+      transform: scale(1.5); }
+  header nav div ul li {
+    list-style: none;
+    display: inline-block;
+    background-image: linear-gradient(to top, #a35858, #848bd9);
+    text-shadow: #F60202;
+    font-size: large;
+    border-radius: 5px;
+    color: white;
+    margin: 0; }
+    header nav div ul li a {
+      text-decoration: none; }
+  header h1 {
+    font-family: 'Merriweather', serif;
+    background-image: linear-gradient(to top, #2A4A9C, black);
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    text-shadow: #F60202 2px 2px; }
+
+/*estilos del main*/
+main {
+  text-align: center;
+  background-image: linear-gradient(to top, #2A4A9C, black);
+  color: white; }
+  main .main-ps {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    justify-items: center;
+    background-color: black;
+    color: white; }
+  main h2 {
+    justify-items: center;
+    padding: 30px;
+    background-image: linear-gradient(to bottom, #2A4A9C, black);
+    padding: 5px;
+    border-radius: 5px;
+    color: white; }
+  main .suge-p {
+    padding: 50px;
+    font-size: 1rem;
+    text-align: start;
+    align-self: start; }
+  main .suge-p2 {
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: #F60202 5px 5px; }
+  main .historia {
+    margin: 20px;
+    width: 900px;
+    border-radius: 50px; }
+  main .sobre-nosotros p {
+    padding: 30px;
+    text-align: left; }
+  main .img-explora {
+    width: 300px;
+    margin: 20px;
+    border-radius: 7px;
+    box-shadow: -6px 6px #F60202; }
+  main .principal-prod {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: 400px 400px 400px;
+    justify-items: center; }
+  main div p {
+    padding: 60px; }
+  main main h1, main main p {
+    text-align: center; }
+  main div img {
+    width: 300px;
+    margin: 10px;
+    border-radius: 7px;
+    box-shadow: -6px 6px #F60202; }
+  main .img-sugerencias {
+    margin: 20px;
+    width: 900px;
+    border-radius: 50px; }
+  main .sobre-p {
+    padding: 25px;
+    text-align: start; }
+
+/*grid index*/
+.container {
+  display: grid;
+  grid-template-areas: "main main" "section section" "footer footer"; }
+
+.indx-principal {
+  grid-area: main; }
+
+.indx-seccion {
+  grid-area: section; }
+
+.indx-pie {
+  grid-area: footer; }
+
+/* grid productos */
+.container-prod {
+  grid-template-areas: "main" "footer"; }
+
+.prod-principal {
+  grid-area: main; }
+
+.prod-pie {
+  grid-area: footer; }
+
+/* estilos del section */
+section {
+  background-image: linear-gradient(to top, #2A4A9C, black);
+  display: flex;
+  flex-direction: row;
+  background-color: whitesmoke;
+  justify-content: center;
+  flex-wrap: wrap; }
+  section img {
+    width: 300px;
+    margin: 30px;
+    border-radius: 7px;
+    box-shadow: -6px 6px #F60202; }
+
+/* estilos del footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  background-image: linear-gradient(to bottom, #2A4A9C, black);
+  color: white; }
+  footer ul li {
+    margin: 10px;
+    padding: 20px;
+    list-style: none;
+    display: inline-block; }
+    footer ul li img {
+      width: 45px;
+      display: block; }
+  footer h3 {
+    color: red; }
