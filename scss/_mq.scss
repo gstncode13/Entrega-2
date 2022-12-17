@@ -12,9 +12,6 @@
     .main-ps{
         display: none;
     }
-    .img-sugerencias{
-        display: none;
-    }
     .suge-p{
         display: none;
     }
@@ -26,6 +23,25 @@
         flex-wrap: wrap;
     }
     .historia{
+        display: none;
+    }
+    .suge-p2{
+        font-size: 1.5rem;
+    }
+   
+}
+@media screen and (max-width:1300px){
+    .banner{
+        width: 100%;
+        margin: 0;
+    }
+    .banner-side{
+        width: 70%;
+        margin: 0;
+    }
+}
+@media screen and (max-width:920px){
+    .img-historia{
         display: none;
     }
 }

@@ -15,8 +15,6 @@
     justify-content: space-around; }
   .main-ps {
     display: none; }
-  .img-sugerencias {
-    display: none; }
   .suge-p {
     display: none; }
   .suge-p2 {
@@ -25,6 +23,20 @@
     display: flex;
     flex-wrap: wrap; }
   .historia {
+    display: none; }
+  .suge-p2 {
+    font-size: 1.5rem; } }
+
+@media screen and (max-width: 1300px) {
+  .banner {
+    width: 100%;
+    margin: 0; }
+  .banner-side {
+    width: 70%;
+    margin: 0; } }
+
+@media screen and (max-width: 920px) {
+  .img-historia {
     display: none; } }
 
 /* estilos del encabezado */
@@ -63,6 +75,10 @@ main {
   text-align: center;
   background-image: linear-gradient(to top, #2A4A9C, black);
   color: white; }
+  main .prod-principal {
+    background-image: linear-gradient(to bottom #2A4A9C, black); }
+  main p {
+    font-size: 1.5rem; }
   main .main-ps {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -76,52 +92,85 @@ main {
     background-image: linear-gradient(to bottom, #2A4A9C, black);
     padding: 5px;
     border-radius: 5px;
-    color: white; }
+    color: white;
+    text-shadow: #F60202 2px 2px; }
+  main .banner {
+    width: 70%;
+    margin: 30px; }
+  main .banner-side {
+    width: 20%; }
   main .suge-p {
     padding: 50px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: start;
-    align-self: start; }
+    align-self: start;
+    text-shadow: #F60202 2px 2px;
+    font-size: 1.5rem; }
   main .suge-p2 {
-    text-align: center;
-    font-size: 3rem;
-    text-shadow: #F60202 5px 5px; }
-  main .historia {
-    margin: 20px;
-    width: 900px;
-    border-radius: 50px; }
-  main .sobre-nosotros p {
-    padding: 30px;
-    text-align: left; }
-  main .img-explora {
-    width: 300px;
-    margin: 20px;
-    border-radius: 7px;
-    box-shadow: -6px 6px #F60202; }
-  main .principal-prod {
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-    grid-template-rows: 400px 400px 400px;
-    justify-items: center; }
-  main div p {
-    padding: 60px; }
-  main main h1, main main p {
-    text-align: center; }
-  main div img {
-    width: 300px;
-    margin: 10px;
-    border-radius: 7px;
-    box-shadow: -6px 6px #F60202; }
-  main .img-sugerencias {
-    margin: 20px;
-    width: 900px;
-    border-radius: 50px; }
-  main .sobre-p {
-    padding: 25px;
-    text-align: start; }
+    text-shadow: #F60202 2px 2px;
+    font-size: 3rem; }
+
+.img-historia {
+  margin: 30px;
+  width: 900px;
+  border-radius: 50px;
+  box-shadow: -6px 6px #F60202; }
+
+.sobre-nosotros p {
+  padding: 30px;
+  text-align: left; }
+
+.img-explora {
+  width: 300px;
+  margin: 20px;
+  border-radius: 7px;
+  box-shadow: -6px 6px #F60202; }
+
+div p {
+  padding: 60px; }
+
+main h1, main p {
+  text-align: center; }
+
+div img {
+  width: 300px;
+  margin: 10px;
+  border-radius: 7px;
+  box-shadow: -6px 6px #F60202; }
+
+.img-sugerencias {
+  width: 50%;
+  border-radius: 50px;
+  margin: 20px;
+  box-shadow: -6px 6px #F60202; }
+
+.sobre-p {
+  padding: 25px;
+  text-align: start; }
+
+/* flex */
+.container-explora {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.principal-prod {
+  display: flex;
+  justify-items: center;
+  flex-wrap: wrap; }
+
+.suge-principal {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.nos-principal {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
 
 /*grid index*/
-.container {
+.container-prin {
   display: grid;
   grid-template-areas: "main main" "section section" "footer footer"; }
 
@@ -144,6 +193,36 @@ main {
 .prod-pie {
   grid-area: footer; }
 
+/* grid sobre nosotros */
+.container-nos {
+  grid-template-areas: "main" "footer"; }
+
+.nos-principal {
+  grid-area: main; }
+
+.nos-pie {
+  grid-area: footer; }
+
+/* grid sugerencias */
+.container-suge {
+  grid-template-areas: "main" "footer"; }
+
+.suge-principal {
+  grid-area: main; }
+
+.suge-pie {
+  grid-area: footer; }
+
+/* grid explora */
+.container-exp {
+  grid-template-areas: "main" "footer"; }
+
+.exp-principal {
+  grid-area: main; }
+
+.exp-pie {
+  grid-area: footer; }
+
 /* estilos del section */
 section {
   background-image: linear-gradient(to top, #2A4A9C, black);
@@ -157,6 +236,10 @@ section {
     margin: 30px;
     border-radius: 7px;
     box-shadow: -6px 6px #F60202; }
+  section .prod-seccion {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
 
 /* estilos del footer */
 footer {

@@ -14,4 +14,9 @@ section{
         border-radius: 7px;
         box-shadow: -6px 6px #F60202;
     }
+    .prod-seccion{
+       display: flex;
+       justify-content: center; 
+       flex-wrap: wrap;
+    }
 }

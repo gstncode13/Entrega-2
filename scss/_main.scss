@@ -5,6 +5,14 @@ main{
     background-image: linear-gradient(to top, #2A4A9C, black);
     color: white;
 
+.prod-principal{
+    background-image: linear-gradient(to bottom #2A4A9C, black);;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
 .main-ps{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -13,6 +21,7 @@ main{
     background-color: black;
     color: white;
 }
+
 h2{
     justify-items: center;
     padding: 30px;
@@ -20,37 +29,43 @@ h2{
     padding: 5px;
     border-radius: 5px;
     color: white;
+    text-shadow: $rojo 2px 2px;
+}
+.banner{
+    width: 70%;
+    margin: 30px;
+}
+.banner-side{
+    width: 20%;
 }
 .suge-p{
     padding: 50px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: start;
     align-self: start;
+    text-shadow: $rojo 2px 2px;
+    font-size: 1.5rem;
 }
 .suge-p2{
-    text-align: center;
+    text-shadow: $rojo 2px 2px;
     font-size: 3rem;
-    text-shadow: $rojo 5px 5px;
 }
-.historia{
-    margin: 20px;
+}
+.img-historia{
+    margin: 30px;
     width: 900px;
     border-radius: 50px;
+    box-shadow: -6px 6px $rojo;
 }
 .sobre-nosotros p{
     padding: 30px;
     text-align: left;
-}.img-explora{
+}
+.img-explora{
     width: 300px;
     margin: 20px;
     border-radius: 7px;
     box-shadow: -6px 6px #F60202;
-}
-.principal-prod{
-    display: grid;
-    grid-template-columns: repeat(5,20%);
-    grid-template-rows: 400px 400px 400px;
-    justify-items: center;
 }
 div{
     p{
@@ -69,19 +84,44 @@ div{
     }
 }
 .img-sugerencias{
-    margin: 20px;
-    width: 900px;
+    width: 50%;
     border-radius: 50px;
+    margin: 20px;
+    box-shadow: -6px 6px $rojo;
 }
 .sobre-p{
     padding: 25px;
     text-align: start;
 }
+/* flex */
+
+.container-explora{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+.principal-prod{
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+.suge-principal{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.nos-principal{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 
 /*grid index*/
 
-.container{
+.container-prin{
     display: grid;
     grid-template-areas: 
         "main main"
@@ -114,5 +154,53 @@ div{
 }
 
 .prod-pie{
+    grid-area: footer;
+}
+
+/* grid sobre nosotros */
+
+.container-nos{
+    grid-template-areas:
+        "main"
+        "footer";   
+}
+
+.nos-principal{
+    grid-area: main;
+}
+
+.nos-pie{
+    grid-area: footer;
+}
+
+/* grid sugerencias */
+
+.container-suge{
+    grid-template-areas:
+        "main"
+        "footer";   
+}
+
+.suge-principal{
+    grid-area: main;
+}
+
+.suge-pie{
+    grid-area: footer;
+}
+
+/* grid explora */
+
+.container-exp{
+    grid-template-areas:
+        "main"
+        "footer";   
+}
+
+.exp-principal{
+    grid-area: main;
+}
+
+.exp-pie{
     grid-area: footer;
 }
